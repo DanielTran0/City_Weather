@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="page-content">
+      <div id="titleBar">
+        <div id="title">
+          <img src="icons/016-compass.png" />
+          <h1>City Weather</h1>
+        </div>
+        <div id="form">
+          <form id="locationForm">
+            <input type="text" placeholder="Enter a City" />
+            <button>Search</button>
+          </form>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="togBtn" />
+          <div class="slider round">
+            <span class="on">°F</span>
+            <span class="off">°C</span>
+          </div>
+        </label>
+      </div>
+
+      <div id="current">
+        <div id="currentOverview">
+          <div class="text-center" id="overviewDetails">
+            <h1 id="city"></h1>
+            <h2 class="currentSpacing" id="currentCondition"></h2>
+            <h2 class="currentSpacing" id="currentTemp"></h2>
+            <p class="currentSpacing" id="currentHigh"></p>
+            <p class="currentSpacing" id="currentLow"></p>
+          </div>
+          <img class="overviewImg" src="" />
+        </div>
+
+        <div id="currentExpanded">
+          <div style="order: 1" class="expandedItem" id="FL">
+            <img src="icons/Expanded/048-temperature.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Feels Like</div>
+              <div class="expandedValue text-center" id="feelsLike"></div>
+            </div>
+          </div>
+          <div style="order: 2" class="expandedItem" id="H">
+            <img src="icons/Expanded/030-humidity.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Humidity</div>
+              <div class="expandedValue text-center" id="humidity"></div>
+            </div>
+          </div>
+          <div style="order: 4" class="expandedItem" id="SR">
+            <img src="icons/Expanded/050-sunrise.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Sunrise</div>
+              <div class="expandedValue text-center" id="sunRise"></div>
+            </div>
+          </div>
+          <div style="order: 5" class="expandedItem" id="W">
+            <img src="icons/Expanded/wind.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Wind</div>
+              <div class="expandedValue text-center" id="wind"></div>
+            </div>
+          </div>
+          <div style="order: 6" class="expandedItem" id="C">
+            <img src="icons/Expanded/022-cloud.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Cloudiness</div>
+              <div class="expandedValue text-center" id="cloudiness"></div>
+            </div>
+          </div>
+          <div style="order: 8" class="expandedItem" id="SS">
+            <img src="icons/Expanded/001-sunset.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Sunset</div>
+              <div class="expandedValue text-center" id="sunSet"></div>
+            </div>
+          </div>
+          <div style="order: 3" class="expandedItem" id="R">
+            <img src="icons/Expanded/014-rain.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Rain</div>
+              <div class="expandedValue text-center" id="rain"></div>
+            </div>
+          </div>
+          <div style="order: 7" class="expandedItem" id="S">
+            <img src="icons/Expanded/019-snowy.png" />
+            <div class="expandedSpacing">
+              <div class="expandedTitle">Snow</div>
+              <div class="expandedValue text-center" id="snow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hourly"></div>
+
+      <div class="week"></div>
+    </div>
+
+    <footer>
+      <div>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>
+      </div>
+      <div>
+        Weather data provided by
+        <a href="https://openweathermap.org/">OpenWeatherAPI</a>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
